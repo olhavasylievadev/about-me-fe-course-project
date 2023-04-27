@@ -1,0 +1,114 @@
+:root {
+    --main-color: #6c63ff;
+    --secondary-color: #f5f2fe;
+    --shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 96px !important;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+h3 {
+    font-size: 24px;
+    opacity: 0.7;
+}
+
+img {
+    vertical-align: middle;
+}
+
+p {
+    text-align: left;
+    font-size: 18px;
+}
+
+.about-paragraphs p {
+    margin: 30px;
+    text-align: center;
+}
+
+.goto-1 {
+    background: var(--main-color);
+    box-shadow: var(--shadow);
+    color: #fff;
+}
+
+.goto-2 {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.my-links {
+    display: flex;
+    justify-content: center;
+}
+
+.my-links a {
+    margin: 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 20px 15px;
+}
+
+.mail {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.primary-link {
+    border-radius: 4px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: var(--main-color);
+    box-shadow: var(--shadow);
+    color: white;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 48px !important;
+    }
+
+    h2 {
+        font-size: 32px !important;
+    }
+
+    h3 {
+        font-size: 24px !important;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .add-margin {
+        margin: 10px auto;
+    }
+
+    .primary-link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-img {
+        display: none;
+    }
+}
