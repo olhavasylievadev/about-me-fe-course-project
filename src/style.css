@@ -2,10 +2,11 @@
     --main-color: #6c63ff;
     --secondary-color: #f5f2fe;
     --shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+    --default-font: 'Roboto Slab', serif;
 }
 
 a {
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--default-font)
 }
 
 h1,
@@ -13,7 +14,7 @@ h2,
 h3 {
     text-align: center;
     margin: 0;
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--default-font)
 }
 
 h1 {
@@ -40,12 +41,43 @@ img {
 p {
     text-align: left;
     font-size: 18px;
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--default-font)
+}
+
+.about-link {
+    border-radius: 4px;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: var(--main-color);
+    box-shadow: var(--shadow);
+    color: white;
 }
 
 .about-paragraphs p {
     margin: 30px;
     text-align: center;
+}
+
+.about-section {
+    margin: 15px 40px;
+}
+
+.about-section h1 {
+    font-size: 64px;
+    text-align: left;
+}
+
+.about-section h2 {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.about-section p {
+    line-height: 30px;
+    font-size: 16px;
+    text-align: left;
 }
 
 .container p {
@@ -100,7 +132,7 @@ p {
     color: white;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 900px) {
     h1 {
         font-size: 48px !important;
     }
@@ -114,6 +146,31 @@ p {
     }
 
     p {
+        text-align: center;
+    }
+
+    .about-section a {
+        display: flex;
+        justify-content: center;
+        margin: 0 20px;
+    }
+
+    .about-section img {
+        display: flex;
+        justify-content: center;
+        margin-top: 3em;
+    }
+
+    .about-section h1 {
+        text-align: center;
+    }
+
+    .about-section h2 {
+        text-align: center;
+    }
+
+    .about-section p {
+        font-size: 14px;
         text-align: center;
     }
 
