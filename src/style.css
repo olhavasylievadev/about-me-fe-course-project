@@ -2,7 +2,10 @@
     --main-color: #6c63ff;
     --secondary-color: #f5f2fe;
     --shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
-    font-family: 'Roboto Flex', sans-serif;
+}
+
+a {
+    font-family: 'Roboto Slab', serif;
 }
 
 h1,
@@ -10,6 +13,7 @@ h2,
 h3 {
     text-align: center;
     margin: 0;
+    font-family: 'Roboto Slab', serif;
 }
 
 h1 {
@@ -36,6 +40,7 @@ img {
 p {
     text-align: left;
     font-size: 18px;
+    font-family: 'Roboto Slab', serif;
 }
 
 .about-paragraphs p {
